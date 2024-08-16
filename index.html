@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Registration</div>
+      <form id="submitForm" action="#">
+        <div class="user_info">
+          <div class="input_field">
+            <label for="username" class="lable">Username</label>
+            <input
+              id="username"
+              name="username"
+              placeholder="UserName"
+              type="text"
+              
+            />
+            <div class="error" id="usernameError"></div>
+          </div>
+
+          <div class="input_field">
+            <label for="email" class="lable">Email</label>
+            <input
+              id="email"
+              name="email"
+              placeholder="yourname@example.com"
+              type="email"
+              
+            />
+            <div class="error" id="emailError"></div>
+          </div>
+
+          <div class="input_field">
+            <label for="firstName" class="lable">First name</label>
+            <input
+              id="firstName"
+              name="firstName"
+              placeholder="First name"
+              type="text"
+              
+            />
+            <div class="error" id="firstNameError"></div>
+          </div>
+          <div class="input_field">
+            <label for="website" class="lable">Website</label>
+            <input
+              id="website"
+              name="website"
+              placeholder="https://www.yourwebsite.com"
+              type="text"
+              
+            />
+            <div class="error" id="websiteError"></div>
+          </div>
+
+          <div class="input_field">
+            <label for="password" class="lable">Password</label>
+            <input
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              type="password"
+              
+            />
+            <div class="error" id="passwordError"></div>
+          </div>
+          <div class="input_field">
+            <label for="rePassword" class="lable">Re-password</label>
+            <input
+              name="rePassword"
+              id="rePassword"
+              placeholder="Re-enter your password"
+              type="password"
+              
+            />
+            <div class="error" id="repasswordError"></div>
+
+          </div>
+          <div class="term_field">
+            <input name="term" id="term" type="checkbox"  />
+            <label for="term"
+              >I agree to the <a href="#">terms and conditions</a></label
+            >
+            <div class="error" id="termError"></div>
+          </div>
+        </div>
+
+        <div class="form_button">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
